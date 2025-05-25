@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Spirits - Premium Wine & Spirits</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Replace existing header section -->
+    <header id="header" class="header-transparent">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-main">Wine Elite</div>
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item active" style="--i:1">
+                        <a href="#" class="nav-link">
+                            <span class="nav-link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="--i:2">
+                        <a href="#collection" class="nav-link">Collection</a>
+                    </li>
+                    <li class="nav-item" style="--i:3">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item" style="--i:4">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item" style="--i:5">
+                        <a href="#tasting" class="nav-link nav-cta">Book Tasting</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+                <source src="https://videos.pexels.com/video-files/3197862/3197862-hd_1920_1080_25fps.mp4"
+                    type="video/mp4">
+                <!-- Add WebM format as fallback -->
+                <source src="https://videos.pexels.com/video-files/3197862/3197862-webm_hd_1920_1080_25fps.webm"
+                    type="video/webm">
+                <!-- Fallback image if video fails -->
+                <img src="https://images.pexels.com/photos/2912108/pexels-photo-2912108.jpeg"
+                    alt="Wine bottles in cellar">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <span class="hero-overline">Est. 2010</span>
+                <h1 class="hero-title">Exceptional Wines, <br><span class="accent-text">Extraordinary Moments</span>
+                </h1>
+                <p class="hero-subtitle">Discover our curated collection of rare and limited edition wines from the
+                    world's most prestigious vineyards</p>
+                <div class="hero-buttons">
+                    <a href="#collection" class="btn btn-primary">Explore Collection</a>
+                    <a href="#tasting" class="btn btn-outline-light">Book Tasting</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🍷</span>
+                        <span class="feature-text">Premium Selection</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🌟</span>
+                        <span class="feature-text">Expert Sommeliers</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📍</span>
+                        <span class="feature-text">Private Tastings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to Explore</span>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section id="featured" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Wines</h2>
+            <p class="section-subtitle">Expertly curated selection of premium wines</p>
+            <div class="wine-grid">
+                <article class="wine-card">
+                    <div class="wine-card-image">
+                        <img src="https://imgs.search.brave.com/F0lOveXrL1bnHjfVmJuTtHu7mmGS6dOsu5qSVjN1bNY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ib3R0bGUtcG91/cmluZy1yZWQtd2lu/ZS1pbnRvLWdsYXNz/LWJsYWNrLWJhY2tn/cm91bmRfNDUzMTM1/LTEzMC5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQw"
+                            alt="Château Margaux 2015">
+                        <span class="wine-badge" data-badge="Premium">Premium</span>
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-title">Château M 2015</h3>
+                        <p class="wine-region">Bordeaux, France</p>
+                        <p class="wine-description">An exceptional vintage showing incredible depth and refinement with
+                            notes of dark berries and subtle oak.</p>
+                        <div class="wine-footer">
+                            <span class="wine-price">₹40,000</span>
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="wine-card">
+                    <div class="wine-card-image">
+                        <img src="https://imgs.search.brave.com/of_0Pi6XcWIrxFbqA7m20Gjqa7deOj_yCaWZ5YWMbew/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9hdXN0/cmFsaWFuLXByZW1p/dW0tcXVhbGl0eS1i/b3R0bGVzLXBlbmZv/bGRzLXNwZWNpYWwt/Y2VsbGFyLXJlc2Vy/dmUtd2luZXMtZXhw/b3J0LWRpc3BsYXkt/c2V0dGluZy1hZGVs/YWlkZS1zb3V0aC1h/dXN0cmFsaWEtMTQy/OTA1OTg5LmpwZw"
+                            alt="Château Lafite 1864">
+                        <span class="wine-badge" data-badge="Rare">Rare</span>
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-title">Château L 1864</h3>
+                        <p class="wine-region">Bordeaux, France</p>
+                        <p class="wine-description">A legendary vintage with exceptional balance and complexity. Notes
+                            of aged leather, tobacco, and dried fruits.</p>
+                        <div class="wine-footer">
+                            <span class="wine-price">₹250,000</span>
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="wine-card">
+                    <div class="wine-card-image">
+                        <img src="https://media.istockphoto.com/id/517055112/photo/still-life-red-wine-cheese-and-prosciutto.jpg?s=612x612&w=0&k=20&c=CMX5Sr-W26M_pL8ay9sGqh0DXOAlacSoeJg2jjzhjLo="
+                            alt="Opus One 2019">
+                        <span class="wine-badge" data-badge="Limited">Limited</span>
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-title">Opus One 2019</h3>
+                        <p class="wine-region">Napa Valley, USA</p>
+                        <p class="wine-description">A masterful blend showcasing the best of Californian terroir with
+                            rich black fruits and elegant tannins.</p>
+                        <div class="wine-footer">
+                            <span class="wine-price">₹85,000</span>
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Add 3 more wine cards for 3x2 grid -->
+                <article class="wine-card">
+                    <div class="wine-card-image">
+                        <img src="https://img.freepik.com/free-photo/advertisement-wine-with-floating-bottle_23-2151258104.jpg?ga=GA1.1.1923379296.1747590422&semt=ais_hybrid&w=740"
+                            alt="Dom Pérignon 2010">
+                        <span class="wine-badge" data-badge="Exclusive">Exclusive</span>
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-title">Dom Pérignon 2010</h3>
+                        <p class="wine-region">Champagne, France</p>
+                        <p class="wine-description">Exceptional vintage champagne with remarkable finesse and
+                            complexity.</p>
+                        <div class="wine-footer">
+                            <span class="wine-price">₹65,000</span>
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="wine-card">
+                    <div class="wine-card-image">
+                        <img src="https://img.freepik.com/premium-photo/red-wine-is-poured-from-bottle-into-glass-glass-grapes-plate-fabric-green-background_139411-915.jpg?ga=GA1.1.1923379296.1747590422&semt=ais_hybrid&w=740"
+                            alt="Sassicaia 2018">
+                        <span class="wine-badge" data-badge="Premium">Premium</span>
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-title">Sassicaia 2018</h3>
+                        <p class="wine-region">Tuscany, Italy</p>
+                        <p class="wine-description">Super Tuscan masterpiece with intense dark fruit and elegant
+                            structure.</p>
+                        <div class="wine-footer">
+                            <span class="wine-price">₹95,000</span>
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="wine-card">
+                    <div class="wine-card-image">
+                        <img src="https://i.pinimg.com/736x/78/4b/6c/784b6c22402eee62701ce724fc3d2055.jpg"
+                            alt="Penfolds Grange 2017">
+                        <span class="wine-badge" data-badge="Limited">Limited</span>
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-title">Penfolds Grange 2017</h3>
+                        <p class="wine-region">South Australia</p>
+                        <p class="wine-description">Australia's most celebrated wine, showing power and sophistication.
+                        </p>
+                        <div class="wine-footer">
+                            <span class="wine-price">₹120,000</span>
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Our Expertise</h2>
+            <p class="section-subtitle">Let our sommeliers guide your selection</p>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">🍷</div>
+                    <h3>Wine Consultation</h3>
+                    <p>Personal guidance from our expert sommeliers to help you find the perfect wine.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">🏺</div>
+                    <h3>Cellar Management</h3>
+                    <p>Professional storage and aging advice for your wine collection.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">🥂</div>
+                    <h3>Tasting Events</h3>
+                    <p>Regular wine tasting sessions featuring rare and exclusive wines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Don't just take our word for it</p>
+
+            <!-- Marquee Banner -->
+            <div class="testimonial-marquee">
+                <div class="marquee-content">
+                    <span>★ Over 1000+ Happy Clients ★ Exceptional Service ★ Premium Wine Selection ★ Expert Sommeliers
+                        ★</span>
+                </div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
+                        <div class="testimonial-quote">❝</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Wine Elite's selection and expertise are unmatched. Their
+                            personalized wine consultation helped me discover exceptional wines."</p>
+                        <div class="testimonial-author">John Smith</div>
+                        <div class="testimonial-role">Wine Enthusiast</div>
+                        <div class="testimonial-rating">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Doe">
+                        <div class="testimonial-quote">❝</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The private tasting experience was beyond exceptional. The
+                            sommelier's knowledge made it unforgettable."</p>
+                        <div class="testimonial-author">Jane Doe</div>
+                        <div class="testimonial-role">Collector</div>
+                        <div class="testimonial-rating">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Robert Johnson">
+                        <div class="testimonial-quote">❝</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Their cellar management service has transformed my collection.
+                            Professional and truly passionate."</p>
+                        <div class="testimonial-author">Robert Johnson</div>
+                        <div class="testimonial-role">Private Collector</div>
+                        <div class="testimonial-rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            <div class="contact-content">
+                <div>
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3>Address</h3>
+                                <p>15 , Lakross street , Jangua , Lucknow <br> Uttar Pradesh <br> 226016</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+91-7604582692</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@electricSpirits.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h3>Business Hours</h3>
+                                <p>Mon-Fri: 9AM-5PM<br>Sat: 10AM-2PM<br>Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <div class="success-message" id="contact-success">
+                        <strong>Success!</strong> Your message has been sent. We'll get back to you soon.
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>LocalBiz</h3>
+                    <p>Providing quality services and products to our community since [Year].</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">Fb</a>
+                        <a href="#" class="social-icon">X</a>
+                        <a href="#" class="social-icon">Ln</a>
+                        <a href="#" class="social-icon">Ig</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#services">Service 1</a></li>
+                        <li><a href="#services">Service 2</a></li>
+                        <li><a href="#services">Service 3</a></li>
+                        <li><a href="#services">Service 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LocalBiz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#hero" class="back-to-top" id="back-to-top">↑</a>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Reserve a Tasting Session</h2>
+            <p class="modal-subtitle">Experience our curated selection with expert guidance</p>
+            <div class="success-message" id="booking-success">
+                <strong>Success!</strong> Your booking has been confirmed. We'll contact you shortly with more details.
+            </div>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="booking-name" class="form-label">Name</label>
+                    <input type="text" id="booking-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-email" class="form-label">Email</label>
+                    <input type="email" id="booking-email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-phone" class="form-label">Phone</label>
+                    <input type="tel" id="booking-phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-date" class="form-label">Preferred Date</label>
+                    <input type="date" id="booking-date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-time" class="form-label">Preferred Time</label>
+                    <input type="time" id="booking-time" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-service" class="form-label">Service</label>
+                    <select id="booking-service" class="form-control" required>
+                        <option value="">-- Select a service --</option>
+                        <option value="wine-consultation">Wine Consultation</option>
+                        <option value="cellar-management">Cellar Management</option>
+                        <option value="tasting-events">Tasting Events</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Reserve Now</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
